@@ -24,7 +24,7 @@
  * Contact info: ivan.difrancesco@yahoo.it
  */
 
-package org.loboevolution.common;
+package org.loboevolution.html.node;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;

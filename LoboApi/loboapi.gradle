@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+description = 'loboApi'
+
+group = 'loboApi'
+version = '4.0'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+jar {
+    archiveFileName.set('loboapi.jar')
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
+
+dependencies {
+    implementation project (path: ':LoboCommon')
+}

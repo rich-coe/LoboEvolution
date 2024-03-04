@@ -30,13 +30,13 @@ package org.loboevolution.gui;
 
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
-import org.loboevolution.common.Nodes;
 import org.loboevolution.html.dom.domimpl.HTMLDocumentImpl;
 import org.loboevolution.html.dom.domimpl.HTMLElementImpl;
 import org.loboevolution.html.dom.domimpl.UINode;
 import org.loboevolution.html.dom.nodeimpl.ModelNode;
 import org.loboevolution.html.dom.nodeimpl.NodeImpl;
 import org.loboevolution.html.node.Node;
+import org.loboevolution.html.node.Nodes;
 import org.loboevolution.html.renderer.*;
 import org.loboevolution.html.renderer.info.RBlockInfo;
 import org.loboevolution.html.renderer.info.RLayoutInfo;

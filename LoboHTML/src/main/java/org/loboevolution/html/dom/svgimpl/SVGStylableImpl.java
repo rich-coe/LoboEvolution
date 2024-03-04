@@ -26,7 +26,6 @@
 
 package org.loboevolution.html.dom.svgimpl;
 
-import org.loboevolution.common.Nodes;
 import org.loboevolution.common.Strings;
 import org.loboevolution.html.CSSValues;
 import org.loboevolution.html.dom.domimpl.HTMLDocumentImpl;
@@ -37,6 +36,7 @@ import org.loboevolution.html.node.Attr;
 import org.loboevolution.html.node.Element;
 import org.loboevolution.html.node.NamedNodeMap;
 import org.loboevolution.html.node.Node;
+import org.loboevolution.html.node.Nodes;
 import org.loboevolution.css.CSSStyleDeclaration;
 import org.loboevolution.html.style.FontValues;
 import org.loboevolution.html.style.HtmlValues;

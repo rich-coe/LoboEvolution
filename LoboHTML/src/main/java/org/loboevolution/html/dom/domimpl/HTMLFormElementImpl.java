@@ -25,7 +25,6 @@
  */
 package org.loboevolution.html.dom.domimpl;
 
-import org.loboevolution.common.Nodes;
 import org.loboevolution.gui.HtmlRendererContext;
 import org.loboevolution.html.dom.HTMLFormControlsCollection;
 import org.loboevolution.html.dom.HTMLFormElement;
@@ -38,6 +37,7 @@ import org.loboevolution.html.js.Executor;
 import org.loboevolution.html.node.Element;
 import org.loboevolution.html.node.NamedNodeMap;
 import org.loboevolution.html.node.Node;
+import org.loboevolution.html.node.Nodes;
 import org.loboevolution.html.renderstate.FormRenderState;
 import org.loboevolution.html.renderstate.RenderState;
 import org.mozilla.javascript.Function;

@@ -27,11 +27,11 @@ package org.loboevolution.html.dom.nodeimpl;
 
 import lombok.*;
 import org.htmlunit.cssparser.dom.DOMException;
-import org.loboevolution.common.Nodes;
 import org.loboevolution.common.Strings;
 import org.loboevolution.html.node.Attr;
 import org.loboevolution.html.node.NamedNodeMap;
 import org.loboevolution.html.node.Node;
+import org.loboevolution.html.node.Nodes;
 import org.loboevolution.html.node.TypeInfo;
 
 import java.util.Objects;

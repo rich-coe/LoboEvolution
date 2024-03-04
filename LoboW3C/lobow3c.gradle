@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+description = 'loboW3C'
+
+group = 'loboW3C'
+version = '4.0'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+jar {
+    archiveFileName.set('lobow3c.jar')
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
+
+dependencies {
+    implementation project (path: ':LoboParser')
+
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+    implementation 'ch.qos.logback:logback-classic:1.3.12'
+}

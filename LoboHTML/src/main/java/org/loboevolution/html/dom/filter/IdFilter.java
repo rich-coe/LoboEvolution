@@ -25,13 +25,13 @@
  */
 package org.loboevolution.html.dom.filter;
 
-import org.loboevolution.common.Nodes;
 import org.loboevolution.common.Strings;
 import org.loboevolution.html.node.Attr;
 import org.loboevolution.html.node.NamedNodeMap;
 import org.loboevolution.traversal.NodeFilter;
 import org.loboevolution.html.node.Element;
 import org.loboevolution.html.node.Node;
+import org.loboevolution.html.node.Nodes;
 
 /**
  * <p>IdFilter class.</p>

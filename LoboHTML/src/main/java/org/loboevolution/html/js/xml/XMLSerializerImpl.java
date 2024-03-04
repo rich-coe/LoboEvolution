@@ -27,7 +27,6 @@
 package org.loboevolution.html.js.xml;
 
 import lombok.extern.slf4j.Slf4j;
-import org.loboevolution.common.Nodes;
 import org.loboevolution.html.dom.nodeimpl.NodeListImpl;
 import org.loboevolution.html.node.*;
 import org.loboevolution.js.xml.XMLSerializer;

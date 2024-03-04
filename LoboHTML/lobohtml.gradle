@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+}
+
+description = 'loboHTML'
+
+group = 'loboHTML'
+version = '4.0'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+jar {
+    archiveFileName.set('lobohtml.jar')
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
+
+dependencies {
+    implementation project (path: ':LoboCommon')
+    implementation project (path: ':LoboParser')
+    implementation project (path: ':LoboW3C')
+    implementation project (path: ':LoboApi')
+    // implementation project (path: ':LoboXalan')
+
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+    implementation 'org.json:json:20231013'
+    implementation 'ch.qos.logback:logback-classic:1.3.12'
+}

@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+}
+
+description = 'loboJTattoo'
+
+group = 'loboJTattoo'
+version = '4.0'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+jar {
+    archiveFileName.set('lobojtattoo.jar')
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
+
+dependencies {
+    implementation project (path: ':LoboCommon')
+    implementation project (path: ':LoboStore')
+
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+    implementation 'ch.qos.logback:logback-classic:1.3.12'
+}

@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+}
+
+description = 'loboEvo'
+
+group = 'loboEvo'
+version = '4.0'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+jar {
+    archiveFileName.set('loboevo.jar')
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
+
+dependencies {
+    implementation project (path: ':LoboCommon')
+    implementation project (path: ':LoboStore')
+    implementation project (path: ':LoboApi')
+    implementation project (path: ':LoboParser')
+    implementation project (path: ':LoboPDF')
+    implementation project (path: ':LoboIViewer')
+    implementation project (path: ':LoboJTattoo')
+    implementation project (path: ':LoboHTML')
+    implementation project (path: ':LoboW3C')
+    implementation project (path: ':LoboJhrome')
+
+    implementation 'org.xerial:sqlite-jdbc:3.41.2.2'
+    implementation 'com.fifesoft:rsyntaxtextarea:3.3.4'
+    implementation 'org.json:json:20231013'
+
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+    implementation 'ch.qos.logback:logback-classic:1.3.12'
+}
