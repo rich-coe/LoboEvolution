@@ -55,13 +55,16 @@ public final class DateUtil {
 	public Date determineDateFormat(final String dateString, final Locale loc) {
 
 		final List<String> DATE_FORMAT = formatList();
+                String emsg = null;
 		for (final String regexp : DATE_FORMAT) {
 			try {
 				return parse(dateString, regexp, loc);
 			} catch (final ParseException e) {
-				log.info(e.getMessage());
+                            if (null != emsg)
+                                emsg = e.getMessage();
 			}
 		}
+                log.info(emsg);
 		return null;
 	}
 
@@ -107,6 +110,7 @@ public final class DateUtil {
 		DATE_FORMAT.add("EEE, dd-MMM-yyyy HH:mm:ss z");
 		DATE_FORMAT.add("EEEMMM ddyyyy");
 		DATE_FORMAT.add("EEEdd MMM yyyy HHmmss Z");
+		DATE_FORMAT.add("EEEdd-MMM-yyyy HH:mm:ss z");
 		DATE_FORMAT.add("EEE, dd MMM yyyy HH:mm:ss Z");
 		DATE_FORMAT.add("EEE MMM dd HHmmss Z yyyy");
 		DATE_FORMAT.add("yyyy-MM-dd HHmmss Z");
