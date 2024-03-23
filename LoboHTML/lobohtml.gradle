@@ -25,11 +25,13 @@ sourceSets {
 }
 
 dependencies {
-    implementation project (path: ':LoboCommon')
-    implementation project (path: ':LoboParser')
-    implementation project (path: ':LoboW3C')
-    implementation project (path: ':LoboApi')
+    // implementation project (path: ':LoboCommon')
+    // implementation project (path: ':LoboParser')
+    // implementation project (path: ':LoboW3C')
+    // implementation project (path: ':LoboApi')
     // implementation project (path: ':LoboXalan')
+
+    implementation 'org.glassfish.corba:glassfish-corba-omgapi:4.2.5'
 
     compileOnly 'org.projectlombok:lombok:1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'

@@ -25,11 +25,11 @@ sourceSets {
 }
 
 dependencies {
-    implementation project (path: ':LoboCommon')
-    implementation project (path: ':LoboApi')
-    implementation project (path: ':LoboParser')
+    // implementation project (path: ':LoboCommon')
+    // implementation project (path: ':LoboApi')
+    // implementation project (path: ':LoboParser')
     implementation project (path: ':LoboHTML')
-    implementation project (path: ':LoboW3C')
+    // implementation project (path: ':LoboW3C')
 
     testCompileOnly 'org.projectlombok:lombok:1.18.24'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'

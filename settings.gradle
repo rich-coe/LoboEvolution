@@ -3,29 +3,29 @@
  */
 
 rootProject.name = 'loboevolution'
-include(':LoboCommon')
-include(':LoboParser')
-include(':LoboW3C')
-include(':LoboApi')
+// include(':LoboCommon')
+// include(':LoboParser')
+// include(':LoboW3C')
+// include(':LoboApi')
 // include(':LoboXalan')
 include(':LoboHTML')
-include(':LoboStore')
-include(':LoboJTattoo')
-include(':LoboPDF')
-include(':LoboJhrome')
-include(':LoboIViewer')
-include(':LoboEvo')
+// include(':LoboStore')
+// include(':LoboJTattoo')
+// include(':LoboPDF')
+// include(':LoboJhrome')
+// include(':LoboIViewer')
+// include(':LoboEvo')
 include(':LoboUnitTest')
-project(":LoboCommon").buildFileName = 'lobocommon.gradle'
-project(":LoboParser").buildFileName = 'loboparser.gradle'
-project(":LoboW3C").buildFileName = 'lobow3c.gradle'
-project(":LoboApi").buildFileName = 'loboapi.gradle'
+// project(":LoboCommon").buildFileName = 'lobocommon.gradle'
+// project(":LoboParser").buildFileName = 'loboparser.gradle'
+// project(":LoboW3C").buildFileName = 'lobow3c.gradle'
+// project(":LoboApi").buildFileName = 'loboapi.gradle'
 // project(":LoboXalan").buildFileName = 'loboxalan.gradle'
 project(":LoboHTML").buildFileName = 'lobohtml.gradle'
-project(":LoboStore").buildFileName = 'lobostore.gradle'
-project(":LoboJTattoo").buildFileName = 'lobojtattoo.gradle'
-project(":LoboPDF").buildFileName = 'lobopdf.gradle'
-project(":LoboJhrome").buildFileName = 'lobojhrome.gradle'
-project(":LoboIViewer").buildFileName = 'loboiviewer.gradle'
-project(":LoboEvo").buildFileName = 'loboevo.gradle'
+// project(":LoboStore").buildFileName = 'lobostore.gradle'
+// project(":LoboJTattoo").buildFileName = 'lobojtattoo.gradle'
+// project(":LoboPDF").buildFileName = 'lobopdf.gradle'
+// project(":LoboJhrome").buildFileName = 'lobojhrome.gradle'
+// project(":LoboIViewer").buildFileName = 'loboiviewer.gradle'
+// project(":LoboEvo").buildFileName = 'loboevo.gradle'
 project(":LoboUnitTest").buildFileName = 'lobounittest.gradle'
