@@ -254,7 +254,7 @@ public abstract class ElementImpl extends NodeImpl implements Element {
 			}
 
 			if (!Strings.isXMLIdentifier(split[0]) || !Strings.isXMLIdentifier(split[1])) {
-				throw new DOMException(DOMException.INVALID_CHARACTER_ERR, "The qualified name contains the invalid character");
+				throw new DOMException(DOMException.INVALID_CHARACTER_ERR, String.format("The qualified name contains an invalid character, name:'%s'", qualifiedName));
 			}
 
 			prefix = split[0];
@@ -263,7 +263,7 @@ public abstract class ElementImpl extends NodeImpl implements Element {
 		} else {
 
 			if (!Strings.isXMLIdentifier(qualifiedName)) {
-				throw new DOMException(DOMException.INVALID_CHARACTER_ERR, "The qualified name contains the invalid character");
+				throw new DOMException(DOMException.INVALID_CHARACTER_ERR, String.format("The qualified name contains the invalid character: '%s'", qualifiedName));
 			}
 
 			if (qualifiedName.equals("xmlns") && !"http://www.w3.org/2000/xmlns".equals(namespaceURI)) {
