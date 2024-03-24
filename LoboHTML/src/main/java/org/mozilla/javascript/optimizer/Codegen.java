@@ -106,7 +106,7 @@ public class Codegen implements Evaluator {
 
         Script script;
         try {
-            script = (Script) cl.newInstance();
+            script = (Script) cl.getDeclaredConstructor().newInstance();
         } catch (Exception ex) {
             throw new RuntimeException("Unable to instantiate compiled class:" + ex.toString());
         }

@@ -1526,8 +1526,7 @@ public class ClassFileWriter {
             executeWorkList();
 
             // Replace dead code with no-ops.
-            for (int i = 0; i < superBlocks.length; i++) {
-                SuperBlock sb = superBlocks[i];
+            for (SuperBlock sb : superBlocks) {
                 if (!sb.isInitialized()) {
                     killSuperBlock(sb);
                 }
@@ -2070,14 +2069,14 @@ public class ClassFileWriter {
                 case ByteCode.NEWARRAY:
                     pop();
                     char componentType = arrayTypeToName(itsCodeBuffer[bci + 1]);
-                    index = itsConstantPool.addClass("[ " + componentType);
+                    index = itsConstantPool.addClass("[" + componentType);
                     push(TypeInfo.OBJECT((short) index));
                     break;
                 case ByteCode.ANEWARRAY:
                     index = getOperand(bci + 1, 2);
                     className = (String) itsConstantPool.getConstantData(index);
                     pop();
-                    push(TypeInfo.OBJECT("[ " +  className + ';', itsConstantPool));
+                    push(TypeInfo.OBJECT("[L" +  className + ';', itsConstantPool));
                     break;
                 case ByteCode.INVOKEVIRTUAL:
                 case ByteCode.INVOKESPECIAL:
